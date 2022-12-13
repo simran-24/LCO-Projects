@@ -1,0 +1,159 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    overflow: hidden;
+    
+}
+body
+{
+    background: url(./images/bg.png);
+    background-size:cover;
+    height: 100vh;
+    background-position: center;  
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 120px;
+}
+.logo-img
+{
+    width:100px;
+}
+.list 
+{
+    display: flex;
+    gap: 6em;
+    align-items: center;
+    list-style-type: none;
+    color: #ffffff;
+    font-size: 30px;
+   
+}
+.list-item
+{
+    cursor: pointer;
+}
+.btn-nav
+{
+    border:none;
+    border-radius: 30px;
+    padding: 10px 50px;
+    font-size:25px;
+    color:#ffffff;
+    background: #e728ae;
+    cursor: pointer;
+}
+/* Section */
+
+.section
+{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.flex-left
+{
+    color: #ffffff;
+    padding-left: 100px;
+    margin-top: 150px;
+    margin-left: 10px;
+      
+}
+.flex-left p
+{ 
+    font-size: 30px;
+}
+.flex-left h1
+{
+    font-size:90px;
+    width: 80%;
+    margin-top: 50px;
+}
+.play-store
+{
+    width:250px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.phone-img
+{
+    
+    height: 80vh;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+   
+    
+}
+
+/* Responsive Code */
+@media screen and (max-width:1760px)
+{
+    .navbar
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3em;
+    }
+    .list
+    {
+        flex-direction: column;
+        gap:2em;
+        align-items: flex-start;
+        font-size: 20px;
+
+    }
+    .btn-nav
+    {
+        padding: 20px;
+        font-size:15px;
+        width:120px;
+    }
+
+    .logo-img
+    {
+        width:60px;
+    }
+   
+    .phone-img
+    {
+        height: 50vh;
+        position:absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+
+}
+@media screen and (max-width:1300px)
+{
+    .phone-img
+    {
+        display: none;
+    }
+    .flex-left p
+    { 
+        font-size: 20px;
+    }
+    .flex-left h1
+    {
+        font-size:50px;
+        width: 80%;
+        margin-top: 50px;
+    }
+    .play-store
+    {
+         width:150px;
+    
+    }
+}
+    
+
